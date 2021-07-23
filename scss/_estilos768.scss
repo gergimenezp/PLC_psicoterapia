@@ -1,0 +1,106 @@
+/*GRILLA 768*/
+.grilla{
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "cabeza cabeza cabeza cabeza"
+    "portada portada portada portada"
+    "suscribe suscribe suscribe suscribe"
+    "cards cards cards cards"
+    "footer footer footer footer";
+    grid-template-columns: (4, 1fr);
+    grid-template-rows: auto auto auto auto auto;
+    overflow-x: hidden;
+}
+
+/*ESTILOS HEADER 768px*/
+
+.cabeza{
+    padding-top: 20px;
+    padding-right: 15px;
+    grid-template-areas:
+    "logo title title HeaderSocial"
+    "logo subtitle none none"
+    "nav nav nav nav";
+    grid-template-rows: 43% 25% 23%;
+    grid-template-columns: (4, 1fr);
+}
+
+.cabeza__logo{
+    padding-top: 9px;
+    img{
+        width: 120px;
+    }
+}
+
+.cabeza__titulo{
+    font-size: 230%; 
+}
+
+.cabeza__subtitulo{
+    font-size: 110%;
+    text-align: right;
+}
+
+.cabeza__social{
+    padding-right: 15px;
+    justify-self: end;
+}
+
+/*NAV 768px*/
+.MyNav{
+    grid-area: nav;
+    align-self: end;
+    justify-self: end;
+    padding-right: 15px;
+    a{  
+        font-size: 125%;
+    }
+}
+
+/*ESTILOS FOOTER 768px*/
+
+.GrillaFooter{
+    display:grid;
+    grid-template-areas:
+    "SocialFooter slogan"
+    "copyright copyright";
+    grid-template-rows: auto auto;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    align-items: baseline;
+}
+
+.pie__slogan{
+    display: inline-block;
+    grid-area: slogan;
+    text-align: right;
+    font-style: italic;
+}
+
+/*ESTILOS PARTICULARES DE CADA HTML*/
+
+/*ESTILOS DEL INDEX*/
+
+.IndexImage__text{
+    font-size: 130%;
+    padding-left: 20px;
+}
+
+.cards{
+    justify-content: space-evenly;
+}
+
+.cards__1{
+    display: inline-block;
+}
+
+.cards__2{
+    display: inline-block;
+}
+
+@each $paginas in Blog, About, Contact, Service {
+    .#{$paginas}Image{
+        background-image: url('../media/PLC_#{$paginas}_m.jpg');
+    }
+}

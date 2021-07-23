@@ -1,0 +1,91 @@
+/*GRILLA 1200*/
+.grilla{
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "cabeza cabeza cabeza cabeza"
+    "portada portada portada portada"
+    "suscribe susbribe none none"
+    "cards cards cards twitter"
+    "footer footer footer footer";
+    grid-template-columns: (4, 1fr);
+    grid-template-rows: auto auto auto auto auto;
+    overflow-x: hidden;
+}
+
+/*ESTILOS HEADER 1200px*/
+
+.cabeza{
+    padding-right: 45px;
+    grid-template-areas:
+    "logo title HeaderSocial"
+    "logo subtitle nav";
+    grid-template-rows: 56% 44%;
+    grid-template-columns: 15% 23% 62%;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.cabeza__logo img{
+    width: 150px;
+}
+
+.cabeza__titulo{
+    font-size: 245%; 
+}
+
+.cabeza__subtitulo{
+    font-size: 116%;
+}
+
+.cabeza__social{
+    align-self: start;
+}
+
+/*NAV 1200px*/
+.MyNav{
+    align-self: start;
+    justify-self: right;
+    justify-content: space-around;
+}
+
+.MyNav li{
+    margin-left: 20px;
+}
+
+.MyNav a{  
+    font-size: 160%;
+}
+
+/*ESTILOS DEL INDEX 1200px*/
+.IndexImage{
+    height: 100vh;
+    background-position: left;
+}
+
+.IndexImage__text{
+    font-size: 135%;
+}
+
+.cards{
+    justify-content: space-evenly;
+}
+
+.cards__3{
+    display: inline-block;
+}
+
+.twitter{
+    grid-area: twitter;
+    overflow-y: hidden;
+    justify-content: center;
+    display: inline-block;
+}
+
+/*ESTILOS PARTICULARES DE CADA HTML*/
+
+@each $paginas in Blog, About, Contact, Service {
+    .#{$paginas}Image{
+        background-image: url('../media/PLC_#{$paginas}_l.jpg');
+    }
+}
