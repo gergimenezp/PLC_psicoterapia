@@ -91,13 +91,21 @@
     justify-content: space-evenly;
 }
 
-.cards__1{
+.cards__1, .cards__2{
     display: inline-block;
 }
 
-.cards__2{
-    display: inline-block;
+/*ESTILOS SERVICIOS*/
+
+.ServiceDescription{
+    float: left;
+    margin-right: 10px;
 }
+
+.ServiceDescription--right{
+    float: right;
+    margin-left: 10px;
+  }
 
 @each $paginas in Blog, About, Contact, Service {
     .#{$paginas}Image{

@@ -54,8 +54,8 @@
   padding-bottom: 5px; }
   .cabeza__social img {
     width: 35px; }
-  .cabeza__social img:hover {
-    transform: scale(1.5, 1.5); }
+    .cabeza__social img:hover {
+      transform: scale(1.5, 1.5); }
   .cabeza__social a {
     text-decoration: none; }
 
@@ -78,8 +78,8 @@
     font-family: "Cormorant Garamond", serif;
     font-size: 100%;
     font-weight: bold; }
-  .MyNav a:hover {
-    color: #000000; }
+    .MyNav a:hover {
+      color: #000000; }
 
 /*Estilo de los títulos de página*/
 .TituloDePagina {
@@ -133,8 +133,8 @@ article {
     text-decoration: none; }
   .pie__social img {
     width: 20px; }
-  .pie__social img:hover {
-    transform: scale(1.5, 1.5); }
+    .pie__social img:hover {
+      transform: scale(1.5, 1.5); }
 
 .pie__slogan {
   display: none; }
@@ -274,12 +274,7 @@ article {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between; }
-  .BlogSec__art iframe, .BlogSec__art--destacado iframe {
-    width: 300px;
-    margin-bottom: 10px;
-    border-radius: 2%;
-    align-self: center; }
-  .BlogSec__art img, .BlogSec__art--destacado img {
+  .BlogSec__art iframe, .BlogSec__art--destacado iframe, .BlogSec__art img, .BlogSec__art--destacado img {
     width: 300px;
     margin-bottom: 10px;
     border-radius: 2%;
@@ -310,15 +305,12 @@ article {
   border: 1px #FF8940 dashed; }
 
 .ServiceDescription, .ServiceDescription--right {
+  display: block;
   width: 300px;
-  float: left;
   border-radius: 2%;
-  margin-right: 10px;
-  margin-bottom: 10px; }
-
-.ServiceDescription--right {
-  float: right;
-  margin-left: 10px; }
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto; }
 
 /*ESTILOS CONTACT*/
 .ContactForm {
@@ -384,10 +376,15 @@ article {
     padding-left: 20px; }
   .cards {
     justify-content: space-evenly; }
-  .cards__1 {
+  .cards__1, .cards__2 {
     display: inline-block; }
-  .cards__2 {
-    display: inline-block; }
+  /*ESTILOS SERVICIOS*/
+  .ServiceDescription {
+    float: left;
+    margin-right: 10px; }
+  .ServiceDescription--right {
+    float: right;
+    margin-left: 10px; }
   .BlogImage {
     background-image: url("../media/PLC_Blog_m.jpg"); }
   .AboutImage {

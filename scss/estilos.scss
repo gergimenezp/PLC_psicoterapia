@@ -74,9 +74,9 @@ $colorComplementario: #FF8940;
     padding-bottom: 5px;
     img{
         width: 35px;
-    }
-    img:hover {
+        &:hover {
         transform:scale(1.5,1.5);
+        }
     }
     a{
         text-decoration: none;
@@ -106,9 +106,9 @@ $colorComplementario: #FF8940;
         font-family: $tipografiaEspecial;
         font-size: 100%;
         font-weight: bold;
-    }
-    a:hover{
+        &:hover{
         color: #000000;
+        }
     }
 }
 
@@ -177,9 +177,9 @@ article{
     }
     img{
         width: 20px;
-    }
-    img:hover {
-        transform:scale(1.5,1.5);
+        &:hover {
+            transform:scale(1.5,1.5);
+        }
     }
 }
 
@@ -314,13 +314,7 @@ article{
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-    iframe{
-        width: 300px;
-        margin-bottom: 10px;
-        border-radius: 2%;
-        align-self: center;
-    }
-    img{
+    iframe, img{
         width: 300px;
         margin-bottom: 10px;
         border-radius: 2%;
@@ -358,18 +352,13 @@ article{
     border: 1px $colorComplementario dashed;
   } 
 
-  .ServiceDescription{
+  .ServiceDescription, .ServiceDescription--right{
+    display: block;
     width: 300px;
-    float: left;
     border-radius: 2%;
-    margin-right: 10px;
     margin-bottom: 10px;
-  }
-
-  .ServiceDescription--right{
-    @extend .ServiceDescription;
-    float: right;
-    margin-left: 10px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 /*ESTILOS CONTACT*/
