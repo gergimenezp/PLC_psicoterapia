@@ -38,7 +38,7 @@ $colorComplementario: #FF8940;
 .cabeza__titulo{
     grid-area: title;
     font-family: 'Satisfy', cursive;
-    font-size: 191%; 
+    font-size: 1.91rem; 
     font-weight: lighter;
     color:#FFFFFF;
     padding-top: 43px;
@@ -54,7 +54,7 @@ $colorComplementario: #FF8940;
 .cabeza__subtitulo{
     grid-area: subtitle;
     font-family: $tipografiaEspecial;
-    font-size: 100%;
+    font-size: 1rem;
     font-weight: bolder;
     line-break: none;
     color: black;
@@ -75,7 +75,7 @@ $colorComplementario: #FF8940;
     img{
         width: 35px;
         &:hover {
-        transform:scale(1.5,1.5);
+            transform:scale(1.5,1.5);
         }
     }
     a{
@@ -104,10 +104,10 @@ $colorComplementario: #FF8940;
         color: #FFFFFF;
         text-decoration: none;
         font-family: $tipografiaEspecial;
-        font-size: 100%;
+        font-size: 1rem;
         font-weight: bold;
         &:hover{
-        color: #000000;
+            color: #000000;
         }
     }
 }
@@ -125,7 +125,7 @@ $colorComplementario: #FF8940;
 .SubtituloDePagina{
     font-family: $tipografiaGeneral;
     font-weight: bold;
-    font-size: 125%;
+    font-size: 1.25rem;
     text-align: center;
 }
 
@@ -205,7 +205,7 @@ article{
     grid-template-rows: auto auto auto auto auto;
     overflow-x: hidden;
     background-color: rgb(248, 248, 248);
-    font-size: 16px;
+    font-size: 1rem;
     font-family: $tipografiaGeneral;
 }
 
@@ -237,7 +237,7 @@ article{
     color: #FFFFFF;
     font-family: $tipografiaEspecial;
     font-weight: bolder;
-    font-size: 80%;
+    font-size: 1rem;
     font-style: italic;
     margin-right: 10px;
     padding-right: 10px;
@@ -284,7 +284,7 @@ article{
 .TitulosBlog{
     color: $colorComplementario;
     font-family: $tipografiaEspecial;
-    font-size: 150%;
+    font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 18px;
     margin-top: 25px;
@@ -324,7 +324,7 @@ article{
 .ServiceName{
     color: $colorComplementario;
     font-family: $tipografiaEspecial;
-    font-size: 150%;
+    font-size: 1.5rem;
     text-decoration: none;
     margin-bottom: 0;
 }
@@ -332,14 +332,14 @@ article{
 .ServiceName__class{
   color: $colorSecundario;
   font-family: $tipografiaEspecial;
-  font-size: 135%;
+  font-size: 1.35rem;
   font-weight: bolder;
 }
 
 .ServiceProposal{
     text-align: center;
     font-weight: bold;
-    font-size: 120%;
+    font-size: 1.2rem;
     margin-top: 30px;
     border: 1px $colorComplementario dashed;
 } 

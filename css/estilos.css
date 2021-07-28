@@ -22,7 +22,7 @@
 .cabeza__titulo {
   grid-area: title;
   font-family: 'Satisfy', cursive;
-  font-size: 191%;
+  font-size: 1.91rem;
   font-weight: lighter;
   color: #FFFFFF;
   padding-top: 43px;
@@ -36,7 +36,7 @@
 .cabeza__subtitulo {
   grid-area: subtitle;
   font-family: "Cormorant Garamond", serif;
-  font-size: 100%;
+  font-size: 1rem;
   font-weight: bolder;
   line-break: none;
   color: black;
@@ -76,7 +76,7 @@
     color: #FFFFFF;
     text-decoration: none;
     font-family: "Cormorant Garamond", serif;
-    font-size: 100%;
+    font-size: 1rem;
     font-weight: bold; }
     .MyNav a:hover {
       color: #000000; }
@@ -92,7 +92,7 @@
 .SubtituloDePagina {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 125%;
+  font-size: 1.25rem;
   text-align: center; }
 
 /*Estilo de texto*/
@@ -149,7 +149,7 @@ article {
   grid-template-rows: auto auto auto auto auto;
   overflow-x: hidden;
   background-color: #f8f8f8;
-  font-size: 16px;
+  font-size: 1rem;
   font-family: "Roboto", sans-serif; }
 
 .grilla__suscribe {
@@ -178,7 +178,7 @@ article {
   color: #FFFFFF;
   font-family: "Cormorant Garamond", serif;
   font-weight: bolder;
-  font-size: 80%;
+  font-size: 1rem;
   font-style: italic;
   margin-right: 10px;
   padding-right: 10px; }
@@ -248,7 +248,7 @@ article {
 .TitulosBlog {
   color: #FF8940;
   font-family: "Cormorant Garamond", serif;
-  font-size: 150%;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 18px;
   margin-top: 25px;
@@ -281,20 +281,20 @@ article {
 .ServiceName {
   color: #FF8940;
   font-family: "Cormorant Garamond", serif;
-  font-size: 150%;
+  font-size: 1.5rem;
   text-decoration: none;
   margin-bottom: 0; }
 
 .ServiceName__class {
   color: #149B7D;
   font-family: "Cormorant Garamond", serif;
-  font-size: 135%;
+  font-size: 1.35rem;
   font-weight: bolder; }
 
 .ServiceProposal {
   text-align: center;
   font-weight: bold;
-  font-size: 120%;
+  font-size: 1.2rem;
   margin-top: 30px;
   border: 1px #FF8940 dashed; }
 
@@ -335,9 +335,9 @@ article {
     .cabeza__logo img {
       width: 120px; }
   .cabeza__titulo {
-    font-size: 230%; }
+    font-size: 2.3rem; }
   .cabeza__subtitulo {
-    font-size: 110%;
+    font-size: 1.1rem;
     text-align: right; }
   .cabeza__social {
     padding-right: 15px;
@@ -349,7 +349,7 @@ article {
     justify-self: end;
     padding-right: 15px; }
     .MyNav a {
-      font-size: 125%; }
+      font-size: 1.25rem; }
   /*ESTILOS FOOTER 768px*/
   .GrillaFooter {
     display: grid;
@@ -366,7 +366,7 @@ article {
   /*ESTILOS PARTICULARES DE CADA HTML*/
   /*ESTILOS DEL INDEX*/
   .IndexImage__text {
-    font-size: 130%;
+    font-size: 1.3rem;
     padding-left: 20px; }
   .cards {
     justify-content: space-evenly; }
@@ -408,9 +408,9 @@ article {
   .cabeza__logo img {
     width: 150px; }
   .cabeza__titulo {
-    font-size: 245%; }
+    font-size: 2.45rem; }
   .cabeza__subtitulo {
-    font-size: 116%; }
+    font-size: 1.16rem; }
   .cabeza__social {
     align-self: start; }
   /*NAV 1200px*/
@@ -421,13 +421,13 @@ article {
   .MyNav li {
     margin-left: 20px; }
   .MyNav a {
-    font-size: 160%; }
+    font-size: 1.6rem; }
   /*ESTILOS DEL INDEX 1200px*/
   .IndexImage {
     height: 100vh;
     background-position: left; }
   .IndexImage__text {
-    font-size: 135%; }
+    font-size: 1.35rem; }
   .cards {
     justify-content: space-evenly; }
   .cards__3 {
