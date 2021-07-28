@@ -1,0 +1,23 @@
+{
+  "name": "plc_psicoterapia",
+  "version": "1.0.0",
+  "description": "\"# PLC_psicoterapia\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gergimenezp/PLC_psicoterapia.git"
+  },
+  "author": "gergimenezp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gergimenezp/PLC_psicoterapia/issues"
+  },
+  "homepage": "https://github.com/gergimenezp/PLC_psicoterapia#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12"
+  }
+}
