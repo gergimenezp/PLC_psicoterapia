@@ -127,7 +127,7 @@ $colorComplementario: #FF8940;
     font-weight: bold;
     font-size: 125%;
     text-align: center;
-  }
+}
 
 /*Estilo de texto*/
 p{
@@ -254,15 +254,7 @@ article{
     overflow-x: hidden;
 }
 
-.cards__2{
-    display: none;
-}
-
-.cards__3{
-    display: none;
-}
-
-.twitter{
+.cards__2, .cards__3, .twitter{
     display: none;
 }
 
@@ -350,16 +342,16 @@ article{
     font-size: 120%;
     margin-top: 30px;
     border: 1px $colorComplementario dashed;
-  } 
+} 
 
-  .ServiceDescription, .ServiceDescription--right{
+.ServiceDescription, .ServiceDescription--right{
     display: block;
     width: 300px;
     border-radius: 2%;
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
-  }
+}
 
 /*ESTILOS CONTACT*/
 

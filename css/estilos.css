@@ -193,13 +193,7 @@ article {
   align-content: center;
   overflow-x: hidden; }
 
-.cards__2 {
-  display: none; }
-
-.cards__3 {
-  display: none; }
-
-.twitter {
+.cards__2, .cards__3, .twitter {
   display: none; }
 
 /*ESTILOS CABECERAS DE PAGINA*/
