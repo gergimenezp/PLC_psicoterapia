@@ -1,0 +1,457 @@
+@charset "UTF-8";
+/*ESTILOS REUTILIZABLES*/
+/*ESTILOS HEADER*/
+.cabeza {
+  grid-area: cabeza;
+  padding-top: 12px;
+  background-color: #3CEFC7;
+  display: grid;
+  grid-template-areas: "logo title title" "logo subtitle subtitle" "nav nav nav" "HeaderSocial HeaderSocial HeaderSocial";
+  grid-template-rows: 26% 15% 23% 25%;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center; }
+
+.cabeza__logo {
+  grid-area: logo;
+  justify-self: right;
+  align-self: start;
+  padding-top: 2px; }
+  .cabeza__logo img {
+    width: 100px; }
+
+.cabeza__titulo {
+  grid-area: title;
+  font-family: 'Satisfy', cursive;
+  font-size: 191%;
+  font-weight: lighter;
+  color: #FFFFFF;
+  padding-top: 43px;
+  justify-self: left;
+  align-self: end;
+  display: inline; }
+  .cabeza__titulo a {
+    text-decoration: none;
+    color: #FFFFFF; }
+
+.cabeza__subtitulo {
+  grid-area: subtitle;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 100%;
+  font-weight: bolder;
+  line-break: none;
+  color: black;
+  align-self: start;
+  display: inline; }
+  .cabeza__subtitulo a {
+    text-decoration: none;
+    color: #000000; }
+
+.cabeza__social {
+  grid-area: HeaderSocial;
+  align-self: center;
+  justify-self: center;
+  padding-top: 20px;
+  padding-bottom: 5px; }
+  .cabeza__social img {
+    width: 35px; }
+  .cabeza__social img:hover {
+    transform: scale(1.5, 1.5); }
+  .cabeza__social a {
+    text-decoration: none; }
+
+/*ESTILOS DEL MENÚ DE NAVEGACIÓN*/
+.MyNav {
+  grid-area: nav;
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  flex-flow: row nowrap; }
+  .MyNav ul {
+    padding-left: 0; }
+  .MyNav li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px; }
+  .MyNav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 100%;
+    font-weight: bold; }
+  .MyNav a:hover {
+    color: #000000; }
+
+/*Estilo de los títulos de página*/
+.TituloDePagina {
+  font-family: "Cormorant Garamond", serif;
+  color: #FFFFFF;
+  font-size: 200%;
+  font-weight: bolder;
+  margin-bottom: 25px; }
+
+.SubtituloDePagina {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 125%;
+  text-align: center; }
+
+/*Estilo de texto*/
+p {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 16px; }
+
+section {
+  padding: 20px; }
+
+article {
+  margin-bottom: 20px; }
+
+/*ESTILOS FOOTER*/
+.GrillaFooter {
+  display: grid;
+  grid-template-areas: "SocialFooter SocialFooter" "copyright copyright";
+  grid-template-rows: auto auto;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+  align-items: center; }
+
+.pie {
+  padding-top: 15px;
+  grid-area: footer;
+  background-color: #3CEFC7; }
+
+.pie__copyright {
+  grid-area: copyright;
+  font-size: small;
+  text-align: center;
+  font-weight: bold;
+  color: #0f0f0f; }
+
+.pie__social {
+  grid-area: SocialFooter; }
+  .pie__social a {
+    text-decoration: none; }
+  .pie__social img {
+    width: 20px; }
+  .pie__social img:hover {
+    transform: scale(1.5, 1.5); }
+
+.pie__slogan {
+  display: none; }
+
+/*ESTILOS PARTICULARES DE CADA HTML*/
+/*ESTILOS DEL INDEX*/
+.grilla {
+  width: 100%;
+  display: grid;
+  grid-template-areas: "cabeza cabeza cabeza cabeza" "portada portada portada portada" "suscribe suscribe suscribe suscribe" "cards cards cards cards" "footer footer footer footer";
+  grid-template-columns: 4, 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  overflow-x: hidden;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif; }
+
+.grilla__suscribe {
+  grid-area: suscribe;
+  padding-left: 20px;
+  padding-right: 0;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+.IndexImage {
+  grid-area: portada;
+  height: 50vh;
+  background-image: url(../media/camino1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  overflow: hidden;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 15px; }
+
+.IndexImage__text {
+  text-align: right;
+  color: #FFFFFF;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bolder;
+  font-size: 80%;
+  font-style: italic;
+  margin-right: 10px;
+  padding-right: 10px; }
+
+.cards {
+  grid-area: cards;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+  overflow-x: hidden; }
+
+.cards__2 {
+  display: none; }
+
+.cards__3 {
+  display: none; }
+
+.twitter {
+  display: none; }
+
+/*ESTILOS CABECERAS DE PAGINA*/
+.BlogImage {
+  background-image: url("../media/PLC_Blog_sm.jpg");
+  background-size: cover;
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-end; }
+
+.AboutImage {
+  background-image: url("../media/PLC_About_sm.jpg");
+  background-size: cover;
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-end; }
+
+.ContactImage {
+  background-image: url("../media/PLC_Contact_sm.jpg");
+  background-size: cover;
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-end; }
+
+.ServiceImage {
+  background-image: url("../media/PLC_Service_sm.jpg");
+  background-size: cover;
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-end; }
+
+.ServiceImage {
+  background-position-y: bottom; }
+
+/*ESTILOS BLOG*/
+.TitulosBlog {
+  color: #FF8940;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 150%;
+  font-weight: bold;
+  margin-bottom: 18px;
+  margin-top: 25px;
+  align-self: center; }
+
+.BlogSec {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly; }
+
+.BlogSec__art, .BlogSec__art--destacado {
+  border-right: dashed 2px black;
+  border-bottom: dashed 2px black;
+  flex-basis: 350px;
+  padding: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between; }
+  .BlogSec__art iframe, .BlogSec__art--destacado iframe {
+    width: 300px;
+    margin-bottom: 10px;
+    border-radius: 2%;
+    align-self: center; }
+  .BlogSec__art img, .BlogSec__art--destacado img {
+    width: 300px;
+    margin-bottom: 10px;
+    border-radius: 2%;
+    align-self: center; }
+
+.BlogSec__art--destacado {
+  border-color: #FF8940; }
+
+/*ESTILOS SERVICIOS*/
+.ServiceName {
+  color: #FF8940;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 150%;
+  text-decoration: none;
+  margin-bottom: 0; }
+
+.ServiceName__class {
+  color: #149B7D;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 135%;
+  font-weight: bolder; }
+
+.ServiceProposal {
+  text-align: center;
+  font-weight: bold;
+  font-size: 120%;
+  margin-top: 30px;
+  border: 1px #FF8940 dashed; }
+
+.ServiceDescription, .ServiceDescription--right {
+  width: 300px;
+  float: left;
+  border-radius: 2%;
+  margin-right: 10px;
+  margin-bottom: 10px; }
+
+.ServiceDescription--right {
+  float: right;
+  margin-left: 10px; }
+
+/*ESTILOS CONTACT*/
+.ContactForm {
+  display: flex;
+  justify-content: center; }
+  .ContactForm form {
+    border: dotted 2px #149B7D;
+    padding: 20px 5px; }
+
+@media only screen and (min-width: 768px) {
+  /*GRILLA 768*/
+  .grilla {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "cabeza cabeza cabeza cabeza" "portada portada portada portada" "suscribe suscribe suscribe suscribe" "cards cards cards cards" "footer footer footer footer";
+    grid-template-columns: 4, 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    overflow-x: hidden; }
+  /*ESTILOS HEADER 768px*/
+  .cabeza {
+    padding-top: 20px;
+    padding-right: 15px;
+    grid-template-areas: "logo title title HeaderSocial" "logo subtitle none none" "nav nav nav nav";
+    grid-template-rows: 43% 25% 23%;
+    grid-template-columns: 4, 1fr; }
+  .cabeza__logo {
+    padding-top: 9px; }
+    .cabeza__logo img {
+      width: 120px; }
+  .cabeza__titulo {
+    font-size: 230%; }
+  .cabeza__subtitulo {
+    font-size: 110%;
+    text-align: right; }
+  .cabeza__social {
+    padding-right: 15px;
+    justify-self: end; }
+  /*NAV 768px*/
+  .MyNav {
+    grid-area: nav;
+    align-self: end;
+    justify-self: end;
+    padding-right: 15px; }
+    .MyNav a {
+      font-size: 125%; }
+  /*ESTILOS FOOTER 768px*/
+  .GrillaFooter {
+    display: grid;
+    grid-template-areas: "SocialFooter slogan" "copyright copyright";
+    grid-template-rows: auto auto;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    align-items: baseline; }
+  .pie__slogan {
+    display: inline-block;
+    grid-area: slogan;
+    text-align: right;
+    font-style: italic; }
+  /*ESTILOS PARTICULARES DE CADA HTML*/
+  /*ESTILOS DEL INDEX*/
+  .IndexImage__text {
+    font-size: 130%;
+    padding-left: 20px; }
+  .cards {
+    justify-content: space-evenly; }
+  .cards__1 {
+    display: inline-block; }
+  .cards__2 {
+    display: inline-block; }
+  .BlogImage {
+    background-image: url("../media/PLC_Blog_m.jpg"); }
+  .AboutImage {
+    background-image: url("../media/PLC_About_m.jpg"); }
+  .ContactImage {
+    background-image: url("../media/PLC_Contact_m.jpg"); }
+  .ServiceImage {
+    background-image: url("../media/PLC_Service_m.jpg"); } }
+
+@media only screen and (min-width: 1200px) {
+  /*GRILLA 1200*/
+  .grilla {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "cabeza cabeza cabeza cabeza" "portada portada portada portada" "suscribe susbribe none none" "cards cards cards twitter" "footer footer footer footer";
+    grid-template-columns: 4, 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    overflow-x: hidden; }
+  /*ESTILOS HEADER 1200px*/
+  .cabeza {
+    padding-right: 45px;
+    grid-template-areas: "logo title HeaderSocial" "logo subtitle nav";
+    grid-template-rows: 56% 44%;
+    grid-template-columns: 15% 23% 62%;
+    justify-content: space-between;
+    text-decoration: none; }
+  .cabeza__logo img {
+    width: 150px; }
+  .cabeza__titulo {
+    font-size: 245%; }
+  .cabeza__subtitulo {
+    font-size: 116%; }
+  .cabeza__social {
+    align-self: start; }
+  /*NAV 1200px*/
+  .MyNav {
+    align-self: start;
+    justify-self: right;
+    justify-content: space-around; }
+  .MyNav li {
+    margin-left: 20px; }
+  .MyNav a {
+    font-size: 160%; }
+  /*ESTILOS DEL INDEX 1200px*/
+  .IndexImage {
+    height: 100vh;
+    background-position: left; }
+  .IndexImage__text {
+    font-size: 135%; }
+  .cards {
+    justify-content: space-evenly; }
+  .cards__3 {
+    display: inline-block; }
+  .twitter {
+    grid-area: twitter;
+    overflow-y: hidden;
+    justify-content: center;
+    display: inline-block; }
+  /*ESTILOS PARTICULARES DE CADA HTML*/
+  .BlogImage {
+    background-image: url("../media/PLC_Blog_l.jpg"); }
+  .AboutImage {
+    background-image: url("../media/PLC_About_l.jpg"); }
+  .ContactImage {
+    background-image: url("../media/PLC_Contact_l.jpg"); }
+  .ServiceImage {
+    background-image: url("../media/PLC_Service_l.jpg"); } }
