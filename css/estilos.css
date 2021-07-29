@@ -313,6 +313,38 @@ article {
     border: dotted 2px #149B7D;
     padding: 20px 5px; }
 
+html {
+  background-color: #3CEFC7; }
+
+.ErrorContaine {
+  margin: auto; }
+
+.error {
+  font-family: "Roboto", sans-serif;
+  text-decoration: line-through;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center; }
+
+.NoExist {
+  color: #FF8940;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bolder;
+  font-size: 2rem;
+  text-align: center; }
+
+.return {
+  text-align: center;
+  width: 100%; }
+  .return a {
+    color: #149B7D;
+    text-decoration: none;
+    font-family: 'Satisfy', cursive;
+    font-size: 2rem; }
+    .return a:hover {
+      color: #FF8940; }
+
 @media only screen and (min-width: 768px) {
   /*ESTILOS HEADER 768px*/
   .cabeza {
