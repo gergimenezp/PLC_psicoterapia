@@ -1,0 +1,30 @@
+/*Estilo de los títulos de página*/
+
+.TituloDePagina{
+    font-family: $tipografiaEspecial;
+    color: #FFFFFF;
+    font-size: 200%;
+    font-weight: bolder;
+    margin-bottom: 25px;
+}
+
+.SubtituloDePagina{
+    font-family: $tipografiaGeneral;
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+/*Estilo de texto*/
+p{
+    font-family: $tipografiaGeneral;
+    margin-bottom: 16px;
+}
+
+section{
+    padding: 20px;
+}
+
+article{
+    margin-bottom: 20px;
+}

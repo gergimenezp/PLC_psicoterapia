@@ -1,18 +1,3 @@
-/*GRILLA 768*/
-.grilla{
-    width: 100%;
-    display: grid;
-    grid-template-areas: 
-    "cabeza cabeza cabeza cabeza"
-    "portada portada portada portada"
-    "suscribe suscribe suscribe suscribe"
-    "cards cards cards cards"
-    "footer footer footer footer";
-    grid-template-columns: (4, 1fr);
-    grid-template-rows: auto auto auto auto auto;
-    overflow-x: hidden;
-}
-
 /*ESTILOS HEADER 768px*/
 
 .cabeza{
@@ -78,9 +63,23 @@
     font-style: italic;
 }
 
-/*ESTILOS PARTICULARES DE CADA HTML*/
+/*ESTILOS PARTICULARES DE CADA PAGINA 768px*/
 
-/*ESTILOS DEL INDEX*/
+/*ESTILOS DEL INDEX 768px*/
+
+.grilla{
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "cabeza cabeza cabeza cabeza"
+    "portada portada portada portada"
+    "suscribe suscribe suscribe suscribe"
+    "cards cards cards cards"
+    "footer footer footer footer";
+    grid-template-columns: (4, 1fr);
+    grid-template-rows: auto auto auto auto auto;
+    overflow-x: hidden;
+}
 
 .IndexImage__text{
     font-size: 1.3rem;
@@ -95,7 +94,7 @@
     display: inline-block;
 }
 
-/*ESTILOS SERVICIOS*/
+/*ESTILOS SERVICIOS 768px*/
 
 .ServiceDescription{
     float: left;
@@ -105,7 +104,9 @@
 .ServiceDescription--right{
     float: right;
     margin-left: 10px;
-  }
+}
+
+/*ESTILOS PORTADAS PAGINAS 768px*/
 
 @each $paginas in Blog, About, Contact, Service {
     .#{$paginas}Image{

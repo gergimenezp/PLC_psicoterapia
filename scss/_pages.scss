@@ -1,0 +1,107 @@
+/*ESTILOS PARTICULARES DE CADA PAGINA*/
+
+/*ESTILOS CABECERAS DE PAGINA*/
+
+@each $paginas in Blog, About, Contact, Service {
+    .#{$paginas}Image{
+        background-image: url('../media/PLC_#{$paginas}_sm.jpg');
+        background-size:cover;
+        height: 60vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow:hidden;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+}
+
+.ServiceImage{
+    background-position-y: bottom;
+}
+
+/*ESTILOS BLOG*/
+
+.TitulosBlog{
+    color: $colorComplementario;
+    font-family: $tipografiaEspecial;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 18px;
+    margin-top: 25px;
+    align-self: center;
+}
+
+.BlogSec{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.BlogSec__art{
+    border-right: dashed 2px black;
+    border-bottom: dashed 2px black;
+    flex-basis: 350px;
+    padding: 10px;
+    overflow:hidden;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    iframe, img{
+        width: 300px;
+        margin-bottom: 10px;
+        border-radius: 2%;
+        align-self: center;
+    }
+}
+
+.BlogSec__art--destacado{
+    @extend .BlogSec__art;
+    border-color: $colorComplementario;
+}
+
+/*ESTILOS SERVICIOS*/
+
+.ServiceName{
+    color: $colorComplementario;
+    font-family: $tipografiaEspecial;
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin-bottom: 0;
+}
+
+.ServiceName__class{
+  color: $colorSecundario;
+  font-family: $tipografiaEspecial;
+  font-size: 1.35rem;
+  font-weight: bolder;
+}
+
+.ServiceProposal{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    border: 1px $colorComplementario dashed;
+} 
+
+.ServiceDescription, .ServiceDescription--right{
+    display: block;
+    width: 300px;
+    border-radius: 2%;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*ESTILOS CONTACT*/
+
+.ContactForm{
+    display: flex;
+    justify-content: center;
+    form{
+        border: dotted 2px $colorSecundario;
+        padding: 20px 5px;
+    }
+}

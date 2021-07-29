@@ -1,0 +1,103 @@
+/*ESTILOS HEADER*/ 
+
+.cabeza{
+    grid-area: cabeza;
+    padding-top: 12px;
+    background-color: $ColorPrincipal;
+    display: grid;
+    grid-template-areas:
+    "logo title title"
+    "logo subtitle subtitle"
+    "nav nav nav"
+    "HeaderSocial HeaderSocial HeaderSocial";
+    grid-template-rows: 26% 15% 23% 25%;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.cabeza__logo{
+    grid-area: logo;
+    justify-self: right;
+    align-self: start;
+    padding-top: 2px;
+    img{
+        width: 100px;
+    }
+}
+
+.cabeza__titulo{
+    grid-area: title;
+    font-family: 'Satisfy', cursive;
+    font-size: 1.91rem; 
+    font-weight: lighter;
+    color:#FFFFFF;
+    padding-top: 43px;
+    justify-self: left;
+    align-self: end;
+    display: inline;
+    a{
+        text-decoration: none;
+        color:#FFFFFF;
+    }
+}
+
+.cabeza__subtitulo{
+    grid-area: subtitle;
+    font-family: $tipografiaEspecial;
+    font-size: 1rem;
+    font-weight: bolder;
+    line-break: none;
+    color: black;
+    align-self: start;
+    display: inline;
+    a{
+        text-decoration: none;
+        color:#000000;
+    }
+}
+
+.cabeza__social{
+    grid-area: HeaderSocial;
+    align-self: center;
+    justify-self: center;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    img{
+        width: 35px;
+        &:hover {
+            transform:scale(1.5,1.5);
+        }
+    }
+    a{
+        text-decoration: none;
+    }
+}
+
+/*ESTILOS DEL MENÚ DE NAVEGACIÓN*/
+
+.MyNav{
+    grid-area: nav;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-flow: row nowrap;
+    ul{
+        padding-left: 0;
+    
+    }
+    li{
+        list-style:none;
+        display: inline-block;
+        margin-left: 10px;
+    }
+    a{  
+        color: #FFFFFF;
+        text-decoration: none;
+        font-family: $tipografiaEspecial;
+        font-size: 1rem;
+        font-weight: bold;
+        &:hover{
+            color: #000000;
+        }
+    }
+}

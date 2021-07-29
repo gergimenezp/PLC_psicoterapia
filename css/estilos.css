@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/*ESTILOS REUTILIZABLES*/
 /*ESTILOS HEADER*/
 .cabeza {
   grid-area: cabeza;
@@ -139,7 +138,6 @@ article {
 .pie__slogan {
   display: none; }
 
-/*ESTILOS PARTICULARES DE CADA HTML*/
 /*ESTILOS DEL INDEX*/
 .grilla {
   width: 100%;
@@ -196,6 +194,7 @@ article {
 .cards__2, .cards__3, .twitter {
   display: none; }
 
+/*ESTILOS PARTICULARES DE CADA PAGINA*/
 /*ESTILOS CABECERAS DE PAGINA*/
 .BlogImage {
   background-image: url("../media/PLC_Blog_sm.jpg");
@@ -315,14 +314,6 @@ article {
     padding: 20px 5px; }
 
 @media only screen and (min-width: 768px) {
-  /*GRILLA 768*/
-  .grilla {
-    width: 100%;
-    display: grid;
-    grid-template-areas: "cabeza cabeza cabeza cabeza" "portada portada portada portada" "suscribe suscribe suscribe suscribe" "cards cards cards cards" "footer footer footer footer";
-    grid-template-columns: 4, 1fr;
-    grid-template-rows: auto auto auto auto auto;
-    overflow-x: hidden; }
   /*ESTILOS HEADER 768px*/
   .cabeza {
     padding-top: 20px;
@@ -363,8 +354,15 @@ article {
     grid-area: slogan;
     text-align: right;
     font-style: italic; }
-  /*ESTILOS PARTICULARES DE CADA HTML*/
-  /*ESTILOS DEL INDEX*/
+  /*ESTILOS PARTICULARES DE CADA PAGINA 768px*/
+  /*ESTILOS DEL INDEX 768px*/
+  .grilla {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "cabeza cabeza cabeza cabeza" "portada portada portada portada" "suscribe suscribe suscribe suscribe" "cards cards cards cards" "footer footer footer footer";
+    grid-template-columns: 4, 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    overflow-x: hidden; }
   .IndexImage__text {
     font-size: 1.3rem;
     padding-left: 20px; }
@@ -372,13 +370,14 @@ article {
     justify-content: space-evenly; }
   .cards__1, .cards__2 {
     display: inline-block; }
-  /*ESTILOS SERVICIOS*/
+  /*ESTILOS SERVICIOS 768px*/
   .ServiceDescription {
     float: left;
     margin-right: 10px; }
   .ServiceDescription--right {
     float: right;
     margin-left: 10px; }
+  /*ESTILOS PORTADAS PAGINAS 768px*/
   .BlogImage {
     background-image: url("../media/PLC_Blog_m.jpg"); }
   .AboutImage {
@@ -389,14 +388,6 @@ article {
     background-image: url("../media/PLC_Service_m.jpg"); } }
 
 @media only screen and (min-width: 1200px) {
-  /*GRILLA 1200*/
-  .grilla {
-    width: 100%;
-    display: grid;
-    grid-template-areas: "cabeza cabeza cabeza cabeza" "portada portada portada portada" "suscribe susbribe none none" "cards cards cards twitter" "footer footer footer footer";
-    grid-template-columns: 4, 1fr;
-    grid-template-rows: auto auto auto auto auto;
-    overflow-x: hidden; }
   /*ESTILOS HEADER 1200px*/
   .cabeza {
     padding-right: 45px;
@@ -423,6 +414,13 @@ article {
   .MyNav a {
     font-size: 1.6rem; }
   /*ESTILOS DEL INDEX 1200px*/
+  .grilla {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "cabeza cabeza cabeza cabeza" "portada portada portada portada" "suscribe susbribe none none" "cards cards cards twitter" "footer footer footer footer";
+    grid-template-columns: 4, 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    overflow-x: hidden; }
   .IndexImage {
     height: 100vh;
     background-position: left; }

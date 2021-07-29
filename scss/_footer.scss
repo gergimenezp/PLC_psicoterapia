@@ -1,0 +1,43 @@
+/*ESTILOS FOOTER*/
+
+.GrillaFooter{
+    display:grid;
+    grid-template-areas:
+    "SocialFooter SocialFooter"
+    "copyright copyright";
+    grid-template-rows: auto auto;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    align-items: center;
+}
+
+.pie{
+    padding-top: 15px;
+    grid-area: footer;
+    background-color: $ColorPrincipal;
+}
+
+.pie__copyright{
+    grid-area: copyright;
+    font-size: small;
+    text-align: center;
+    font-weight: bold;
+    color: #0f0f0f;
+}
+
+.pie__social{
+    grid-area: SocialFooter;
+    a{
+        text-decoration: none;
+    }
+    img{
+        width: 20px;
+        &:hover {
+            transform:scale(1.5,1.5);
+        }
+    }
+}
+
+.pie__slogan{
+    display: none;
+}

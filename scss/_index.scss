@@ -1,0 +1,67 @@
+/*ESTILOS DEL INDEX*/
+
+.grilla{
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "cabeza cabeza cabeza cabeza"
+    "portada portada portada portada"
+    "suscribe suscribe suscribe suscribe"
+    "cards cards cards cards"
+    "footer footer footer footer";
+    grid-template-columns: (4, 1fr);
+    grid-template-rows: auto auto auto auto auto;
+    overflow-x: hidden;
+    background-color: rgb(248, 248, 248);
+    font-size: 1rem;
+    font-family: $tipografiaGeneral;
+}
+
+.grilla__suscribe{
+    grid-area: suscribe;
+    padding-left: 20px;
+    padding-right: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.IndexImage{
+    grid-area: portada;
+    height: 50vh;
+    background-image:url(../media/camino1.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    overflow:hidden;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 15px;
+}
+
+.IndexImage__text{
+    text-align: right;
+    color: #FFFFFF;
+    font-family: $tipografiaEspecial;
+    font-weight: bolder;
+    font-size: 1rem;
+    font-style: italic;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+.cards{
+    grid-area: cards;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+    overflow-x: hidden;
+}
+
+.cards__2, .cards__3, .twitter{
+    display: none;
+}
