@@ -316,16 +316,27 @@ article {
 html {
   background-color: #3CEFC7; }
 
-.ErrorContaine {
+.ErrorContainer {
   margin: auto; }
 
 .error {
+  margin-top: 35px;
   font-family: "Roboto", sans-serif;
-  text-decoration: line-through;
   font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center; }
+  .error span {
+    text-decoration: line-through;
+    font-weight: normal;
+    color: grey; }
+
+.burnout {
+  width: 300px;
+  margin: 25px auto; }
+  .burnout img {
+    width: 300px;
+    border-radius: 100%; }
 
 .NoExist {
   color: #FF8940;
