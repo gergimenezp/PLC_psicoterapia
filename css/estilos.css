@@ -313,7 +313,8 @@ article {
     border: dotted 2px #149B7D;
     padding: 20px 5px; }
 
-html {
+/*ESTILOS ERROR 404*/
+.FondoError {
   background-color: #3CEFC7; }
 
 .ErrorContainer {
