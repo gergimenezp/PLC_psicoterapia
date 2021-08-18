@@ -73,7 +73,8 @@
   .MyNav li {
     list-style: none;
     display: block;
-    text-align: center; }
+    text-align: center;
+    margin-top: 0.4rem; }
   .MyNav a {
     color: #FFFFFF;
     text-decoration: none;
@@ -361,7 +362,7 @@ article {
     grid-template-rows: 43% 25% 23%;
     grid-template-columns: 4, 1fr; }
   .cabeza__logo {
-    padding-top: 1px; }
+    padding-top: 2px; }
     .cabeza__logo img {
       width: 120px; }
   .cabeza__titulo {
