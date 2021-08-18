@@ -8,6 +8,10 @@ $colorComplementario: #FF8940;
 
 //ESTILOS 
 
+*{
+    margin:0; padding: 0;
+}
+
 @import "cabecera";
 @import "textos";
 @import "footer";

@@ -10,7 +10,7 @@
     "logo subtitle subtitle"
     "nav nav nav"
     "HeaderSocial HeaderSocial HeaderSocial";
-    grid-template-rows: 26% 15% 23% 25%;
+    grid-template-rows: 22% 15% 40% 25%;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
 }
@@ -19,7 +19,7 @@
     grid-area: logo;
     justify-self: right;
     align-self: start;
-    padding-top: 2px;
+    padding-top: 9px;
     img{
         width: 100px;
     }
@@ -31,9 +31,9 @@
     font-size: 1.91rem; 
     font-weight: lighter;
     color:#FFFFFF;
-    padding-top: 43px;
+    padding-top: 17px;
     justify-self: left;
-    align-self: end;
+    align-self: center;
     display: inline;
     a{
         text-decoration: none;
@@ -46,7 +46,6 @@
     font-family: $tipografiaEspecial;
     font-size: 1rem;
     font-weight: bolder;
-    line-break: none;
     color: black;
     align-self: start;
     display: inline;
@@ -87,14 +86,14 @@
     }
     li{
         list-style:none;
-        display: inline-block;
-        margin-left: 10px;
+        display: block;
+        text-align: center;
     }
     a{  
         color: #FFFFFF;
         text-decoration: none;
         font-family: $tipografiaEspecial;
-        font-size: 1rem;
+        font-size: 1.2rem;
         font-weight: bold;
         &:hover{
             color: #000000;

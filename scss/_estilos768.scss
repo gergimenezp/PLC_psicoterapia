@@ -12,7 +12,7 @@
 }
 
 .cabeza__logo{
-    padding-top: 9px;
+    padding-top: 1px;
     img{
         width: 120px;
     }
@@ -38,6 +38,11 @@
     align-self: end;
     justify-self: end;
     padding-right: 15px;
+    li{
+        display: inline-block;
+        margin-left: 10px;
+        text-align: left;
+    }
     a{  
         font-size: 1.25rem;
     }
