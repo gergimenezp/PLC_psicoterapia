@@ -50,7 +50,7 @@
     "cabeza cabeza cabeza cabeza"
     "portada portada portada portada"
     "suscribe susbribe none none"
-    "cards cards cards twitter"
+    "cards cards cards cards"
     "footer footer footer footer";
     grid-template-columns: (4, 1fr);
     grid-template-rows: auto auto auto auto auto;
@@ -70,14 +70,7 @@
     justify-content: space-evenly;
 }
 
-.cards__3{
-    display: inline-block;
-}
-
-.twitter{
-    grid-area: twitter;
-    overflow-y: hidden;
-    justify-content: center;
+.cards__3, .cards__4{
     display: inline-block;
 }
 
